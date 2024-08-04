@@ -20,17 +20,16 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-7shkbqyw_328tvy@-yov3)taq8b7sw@iy64d3-low$be&ie3%&'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-7shkbqyw_328tvy@-yov3)taq8b7sw@iy64d3-low$be&ie3%&')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-enrightc-hellodjango-c6dsavhfbfk.ws.codeinstitute-ide.net', 'charlie-todo-app-62ea3c57b976.herokuapp.com']
+ALLOWED_HOSTS = [os.environ.get('HEROKU_HOST_NAME')]
 
 
 # Application definition
