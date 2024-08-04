@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-7shkbqyw_328tvy@-yov3)taq8b7sw@iy64d3-low$be&ie3%&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-enrightc-hellodjango-c6dsavhfbfk.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-enrightc-hellodjango-c6dsavhfbfk.ws.codeinstitute-ide.net', 'charlie-todo-app-62ea3c57b976.herokuapp.com']
 
 
 # Application definition
